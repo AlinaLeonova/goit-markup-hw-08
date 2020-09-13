@@ -1,0 +1,65 @@
+.features {
+  padding-top: 94px;
+}
+
+.features-list {
+  display: flex;
+  margin: -15px;
+  padding: 0;
+}
+
+.features-item {
+  width: 270px;
+  margin: 15px;
+
+  &::before {
+    display: block;
+    content: "";
+    height: 120px;
+    width: 100%;
+    margin-bottom: 30px;
+    background-color: $secondary-grey;
+    border-radius: 4px;
+    background-image: url();
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+.antenna-icon:before {
+  background-image: url(../images/antenna.svg);
+  background-position: 100px 25px;
+}
+
+.clock-icon:before {
+  background-image: url(../images/clock.svg);
+  background-position: 100px 25px;
+}
+
+.diagram-icon:before {
+  background-image: url(../images/diagram.svg);
+  background-position: 100px 25px;
+}
+
+.astronaut-icon:before {
+  background-image: url(../images/astronaut.svg);
+  background-position: 100px 25px;
+}
+
+.features-title {
+  color: $title-text-color;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.features-text {
+  color: $primary-text-color;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  margin: 0;
+}

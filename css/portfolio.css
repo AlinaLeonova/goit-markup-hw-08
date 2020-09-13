@@ -422,13 +422,13 @@ address {
 
 @media screen and (min-width: 768px) {
   .gallery-item {
-    width: calc(100% / 2);
+    width: 354px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .gallery-item {
-    width: calc(100% / 3);
+    width: 370px;
   }
 }
 
@@ -442,6 +442,7 @@ address {
 
 .item-box {
   border: 1px solid #eeeeee;
+  display: block;
 }
 
 .item-box:hover, .item-box:focus {

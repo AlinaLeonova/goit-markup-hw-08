@@ -138,6 +138,21 @@ address {
   }
 }
 
+.logo-footer {
+  color: #ffffff;
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.logo-footer .accent {
+  color: #2196f3;
+}
+
 .nav {
   display: none;
 }
@@ -252,7 +267,7 @@ address {
 }
 
 .address-item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 
 .maps {
@@ -302,17 +317,13 @@ address {
   color: #ffffff;
 }
 
-.submit-form {
-  display: flex;
-}
-
 .subscribe-form {
   position: relative;
   margin-right: 12px;
 }
 
 .subscribe-input {
-  width: 358px;
+  width: 450px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   background-color: #2f303a;
@@ -322,6 +333,7 @@ address {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
+  margin-bottom: 20px;
 }
 
 .subscribe-input:focus {
@@ -511,18 +523,20 @@ address {
 }
 
 .footer .container {
-  display: flex;
+  text-align: center;
 }
 
 .footer .button {
-  padding: 10px 29px;
   display: flex;
+  margin: 0 auto;
+  align-items: center;
+  padding: 10px 29px;
+  min-width: 200px;
 }
 
 .footer .socials-list {
   display: flex;
-  align-items: baseline;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 .footer .social-link {
@@ -539,14 +553,20 @@ address {
 }
 
 .footer-section {
-  min-width: 270px;
   margin-right: 30px;
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-section {
+    min-width: 270px;
+  }
 }
 
 .call-text {
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;

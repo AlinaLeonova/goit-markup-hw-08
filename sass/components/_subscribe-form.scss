@@ -1,13 +1,13 @@
-.submit-form {
-  display: flex;
-}
+// .submit-form {
+//   display: flex;
+// }
 
 .subscribe-form {
   position: relative;
   margin-right: 12px;
 }
 .subscribe-input {
-  width: 358px;
+  width: 450px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   background-color: $background-color;
@@ -17,6 +17,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
+  margin-bottom: 20px;
 
   &:focus {
     outline: none;

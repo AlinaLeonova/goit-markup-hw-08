@@ -98,11 +98,17 @@ address {
 .section-title {
   color: #212121;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section-title {
+    font-size: 36px;
+  }
 }
 
 .logo {
@@ -506,6 +512,7 @@ address {
 .hero {
   display: flex;
   text-align: center;
+  justify-content: center;
   min-height: 400px;
   background-color: #2f303a;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
@@ -543,7 +550,7 @@ address {
 @media screen and (min-width: 1200px) {
   .hero-content {
     max-width: 1200px;
-    padding: 200px 250px;
+    padding: 50px 15px;
   }
 }
 
@@ -564,21 +571,40 @@ address {
 }
 
 .features {
-  padding-top: 94px;
+  padding-top: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .features {
+    padding-top: 94px;
+  }
 }
 
 .features-list {
   display: flex;
+  flex-wrap: wrap;
   margin: -15px;
   padding: 0;
 }
 
-.features-item {
-  width: 270px;
+.features-box {
   margin: 15px;
+  width: 450px;
 }
 
-.features-item::before {
+@media screen and (min-width: 768px) {
+  .features-box {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features-box {
+    width: 270px;
+  }
+}
+
+.features-box::before {
   display: block;
   content: "";
   height: 120px;
@@ -586,39 +612,25 @@ address {
   margin-bottom: 30px;
   background-color: #f5f4fa;
   border-radius: 4px;
-  background-image: url();
   background-size: contain;
   background-repeat: no-repeat;
 }
 
-.antenna-icon:before {
-  background-image: url(../images/antenna.svg);
-  background-position: 100px 25px;
-}
-
-.clock-icon:before {
-  background-image: url(../images/clock.svg);
-  background-position: 100px 25px;
-}
-
-.diagram-icon:before {
-  background-image: url(../images/diagram.svg);
-  background-position: 100px 25px;
-}
-
-.astronaut-icon:before {
-  background-image: url(../images/astronaut.svg);
-  background-position: 100px 25px;
-}
-
 .features-title {
   color: #212121;
+  text-align: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .features-title {
+    text-align: start;
+  }
 }
 
 .features-text {
@@ -630,7 +642,14 @@ address {
 }
 
 .work-sect {
-  padding: 94px 0;
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .work-sect {
+    display: block;
+    padding: 94px 0;
+  }
 }
 
 .work-examples {
@@ -670,22 +689,41 @@ address {
 
 .team-sect {
   background-color: #f5f4fa;
-  padding: 94px 0;
+  padding: 60px 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .team-sect {
+    padding: 94px 0;
+  }
 }
 
 .team-cards {
   margin: 0;
   display: flex;
+  flex-wrap: wrap;
   margin: -15px;
   padding: 0;
 }
 
 .team-card {
-  width: 270px;
+  width: 450px;
   margin: 15px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .team-card {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-card {
+    width: 270px;
+  }
 }
 
 .card-title {
@@ -774,28 +812,32 @@ address {
 }
 
 .clients-sect {
-  padding: 94px 0;
+  padding: 60px 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-sect {
+    padding: 94px 0;
+  }
 }
 
 .client-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  margin: -15px;
 }
 
 .list-item {
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  width: 170px;
+  width: 210px;
   height: 90px;
+  margin: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.list-item:not(:last-child) {
-  margin-right: 30px;
 }
 
 .list-item:hover, .list-item:focus {

@@ -1,16 +1,29 @@
 .features {
-  padding-top: 94px;
+  padding-top: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+  }
 }
 
 .features-list {
   display: flex;
+  flex-wrap: wrap;
   margin: -15px;
   padding: 0;
 }
 
-.features-item {
-  width: 270px;
+.features-box {
   margin: 15px;
+  width: 450px;
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
 
   &::before {
     display: block;
@@ -20,40 +33,24 @@
     margin-bottom: 30px;
     background-color: $secondary-grey;
     border-radius: 4px;
-    background-image: url();
     background-size: contain;
     background-repeat: no-repeat;
   }
 }
 
-.antenna-icon:before {
-  background-image: url(../images/antenna.svg);
-  background-position: 100px 25px;
-}
-
-.clock-icon:before {
-  background-image: url(../images/clock.svg);
-  background-position: 100px 25px;
-}
-
-.diagram-icon:before {
-  background-image: url(../images/diagram.svg);
-  background-position: 100px 25px;
-}
-
-.astronaut-icon:before {
-  background-image: url(../images/astronaut.svg);
-  background-position: 100px 25px;
-}
-
 .features-title {
   color: $title-text-color;
+  text-align: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 10px;
+
+  @media screen and (min-width: 768px) {
+    text-align: start;
+  }
 }
 
 .features-text {
@@ -63,3 +60,23 @@
   letter-spacing: 0.03em;
   margin: 0;
 }
+
+// .antenna-icon:before {
+//   background-image: url(../images/antenna.svg);
+//   background-position: 100px 25px;
+// }
+
+// .clock-icon:before {
+//   background-image: url(../images/clock.svg);
+//   background-position: 100px 25px;
+// }
+
+// .diagram-icon:before {
+//   background-image: url(../images/diagram.svg);
+//   background-position: 100px 25px;
+// }
+
+// .astronaut-icon:before {
+//   background-image: url(../images/astronaut.svg);
+//   background-position: 100px 25px;
+// }

@@ -11,6 +11,14 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   color: $primary-white;
+
+  .footer & {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    padding: 10px 29px;
+    min-width: 200px;
+  }
 }
 
 .button-text {

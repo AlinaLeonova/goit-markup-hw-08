@@ -117,7 +117,6 @@ address {
   line-height: 2;
   letter-spacing: 0.03em;
   text-decoration: none;
-  padding: 16px 0;
 }
 
 .logo .accent {
@@ -138,19 +137,10 @@ address {
   }
 }
 
-.logo-footer {
+.footer .logo {
   color: #ffffff;
-  font-family: Raleway, sans-serif;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-  display: block;
   margin-bottom: 20px;
-}
-
-.logo-footer .accent {
-  color: #2196f3;
+  display: block;
 }
 
 .nav {
@@ -301,6 +291,14 @@ address {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   color: #ffffff;
+}
+
+.footer .button {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  padding: 10px 29px;
+  min-width: 200px;
 }
 
 .button-text {
@@ -597,6 +595,7 @@ address {
   flex-wrap: wrap;
   margin: -15px;
   padding: 0;
+  margin-bottom: 60px;
 }
 
 .features-box {
@@ -895,14 +894,6 @@ address {
   text-align: center;
 }
 
-.footer .button {
-  display: flex;
-  margin: 0 auto;
-  align-items: center;
-  padding: 10px 29px;
-  min-width: 200px;
-}
-
 .footer .socials-list {
   display: flex;
   justify-content: center;
@@ -922,7 +913,6 @@ address {
 }
 
 .footer-section {
-  margin-right: 30px;
   margin-bottom: 60px;
 }
 

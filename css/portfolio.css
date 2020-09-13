@@ -117,7 +117,6 @@ address {
   line-height: 2;
   letter-spacing: 0.03em;
   text-decoration: none;
-  padding: 16px 0;
 }
 
 .logo .accent {
@@ -138,19 +137,10 @@ address {
   }
 }
 
-.logo-footer {
+.footer .logo {
   color: #ffffff;
-  font-family: Raleway, sans-serif;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-  display: block;
   margin-bottom: 20px;
-}
-
-.logo-footer .accent {
-  color: #2196f3;
+  display: block;
 }
 
 .nav {
@@ -303,6 +293,14 @@ address {
   color: #ffffff;
 }
 
+.footer .button {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  padding: 10px 29px;
+  min-width: 200px;
+}
+
 .button-text {
   color: #ffffff;
   text-align: center;
@@ -358,12 +356,27 @@ address {
 }
 
 .gallery-menu {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery-menu {
+    text-align: center;
+    margin-bottom: 36px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .gallery-menu {
+    text-align: center;
+    margin-bottom: 50px;
+  }
 }
 
 .gallery-btn {
+  display: inline-block;
+  margin-right: 8px;
+  margin-bottom: 15px;
   background: #f5f4fa;
   border-radius: 4px;
   padding: 6px 22px;
@@ -381,10 +394,6 @@ address {
   background-color: #2196f3;
 }
 
-.gallery-btn:not(:last-child) {
-  margin-right: 8px;
-}
-
 .gallery {
   display: flex;
   flex-wrap: wrap;
@@ -397,13 +406,30 @@ address {
 }
 
 .gallery-sect {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding: 60px 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .gallery-sect {
+    padding: 94px 0;
+  }
 }
 
 .gallery-item {
-  width: calc(100% / 3);
-  padding: 15px;
+  margin: 15px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery-item {
+    width: calc(100% / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .gallery-item {
+    width: calc(100% / 3);
+  }
 }
 
 .gallery-item .title {
@@ -416,7 +442,6 @@ address {
 
 .item-box {
   border: 1px solid #eeeeee;
-  display: block;
 }
 
 .item-box:hover, .item-box:focus {
@@ -448,11 +473,23 @@ address {
   background-color: rgba(33, 150, 243, 0.9);
   color: #ffffff;
   font-size: 18px;
-  padding: 63px 24px;
+  padding: 77px 24px;
   line-height: 1.56;
   letter-spacing: 0.03em;
   transform: translatey(100%);
   transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .overlay {
+    padding: 49px 24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .overlay {
+    padding: 63px 24px;
+  }
 }
 
 .socials-list {
@@ -526,14 +563,6 @@ address {
   text-align: center;
 }
 
-.footer .button {
-  display: flex;
-  margin: 0 auto;
-  align-items: center;
-  padding: 10px 29px;
-  min-width: 200px;
-}
-
 .footer .socials-list {
   display: flex;
   justify-content: center;
@@ -553,7 +582,6 @@ address {
 }
 
 .footer-section {
-  margin-right: 30px;
   margin-bottom: 60px;
 }
 

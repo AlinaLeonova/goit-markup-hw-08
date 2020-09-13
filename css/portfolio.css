@@ -65,11 +65,28 @@ address {
 }
 
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-right: auto;
   margin-left: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .section {
@@ -90,28 +107,47 @@ address {
 
 .logo {
   font-family: Raleway, sans-serif;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 2;
   letter-spacing: 0.03em;
   text-decoration: none;
-  margin-right: 93px;
-  padding: 24px 0;
+  padding: 16px 0;
 }
 
-.logo-footer {
-  color: #ffffff;
-  font-family: Raleway, sans-serif;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-  display: block;
-  margin-bottom: 20px;
+.logo .accent {
+  color: #2196f3;
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-right: 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
+    margin-right: 93px;
+  }
 }
 
 .nav {
-  display: flex;
-  align-items: center;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .nav {
+    display: flex;
+    margin-right: 84px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .nav {
+    display: flex;
+    margin-right: 305px;
+  }
 }
 
 .nav-item {
@@ -139,17 +175,45 @@ address {
   margin-right: 50px;
 }
 
+.current {
+  color: #2196f3;
+  position: relative;
+}
+
+.current::after {
+  content: "";
+  background-color: #2196f3;
+  width: 100%;
+  height: 4px;
+  display: block;
+  border-radius: 2px;
+  position: absolute;
+  top: 44px;
+}
+
 .contacts {
-  margin: 0;
-  display: flex;
-  align-items: center;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .contacts-item {
   color: #757575;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 12px;
+  line-height: 2px;
   letter-spacing: 0.02em;
   text-decoration: none;
   display: flex;
@@ -161,8 +225,10 @@ address {
   color: #2196f3;
 }
 
-.contacts-item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 1200px) {
+  .contacts-item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .contacts-svg {
@@ -250,7 +316,6 @@ address {
 }
 
 .header {
-  display: flex;
   border-bottom: 1px solid #ececec;
 }
 
@@ -258,37 +323,6 @@ address {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.logo {
-  color: #212121;
-  font-family: Raleway, sans-serif;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-  margin-right: 93px;
-  padding: 24px 0;
-}
-
-.accent {
-  color: #2196f3;
-}
-
-.current {
-  color: #2196f3;
-  position: relative;
-}
-
-.current::after {
-  content: "";
-  background-color: #2196f3;
-  width: 100%;
-  height: 4px;
-  display: block;
-  border-radius: 2px;
-  position: absolute;
-  top: 44px;
 }
 
 .gallery-menu {

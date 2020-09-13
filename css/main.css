@@ -15,7 +15,7 @@ html {
 img {
   display: block;
   max-width: 100%;
-  height: auto;
+  object-fit: cover;
 }
 
 body {
@@ -282,6 +282,20 @@ address {
   color: #ffffff;
 }
 
+.button-text {
+  color: #ffffff;
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  padding: 10px 32px;
+}
+
+.button-text:hover, .button-text:focus {
+  color: #ffffff;
+}
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -489,56 +503,64 @@ address {
   justify-content: space-between;
 }
 
-.button-text {
-  color: #ffffff;
-  text-align: center;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-  padding: 10px 32px;
-}
-
-.button-text:hover, .button-text:focus {
-  color: #ffffff;
-}
-
 .hero {
-  /* position: relative; */
   display: flex;
   text-align: center;
-  justify-content: center;
-  height: 600px;
+  min-height: 400px;
   background-color: #2f303a;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/hero-img.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  max-width: 1600px;
+  max-width: 480px;
   margin-right: auto;
   margin-left: auto;
 }
 
-.hero .button {
-  padding: 10px 32px;
+@media screen and (min-width: 768px) {
+  .hero {
+    max-width: 768px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-tablet.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    min-height: 600px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/hero-img.jpg);
+    max-width: 1600px;
+  }
 }
 
 .hero-content {
-  max-width: 696px;
+  max-width: 480px;
   text-align: center;
   margin: auto;
-  position: relative;
+  padding: 118px 60px;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-content {
+    max-width: 1200px;
+    padding: 200px 250px;
+  }
 }
 
 .hero-title {
-  margin: 0;
-  color: #ffffff;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .features {

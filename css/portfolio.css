@@ -416,6 +416,7 @@ address {
 }
 
 .gallery-item {
+  width: 450px;
   margin: 15px;
   margin-bottom: 30px;
 }

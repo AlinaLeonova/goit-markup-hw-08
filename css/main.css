@@ -828,6 +828,12 @@ address {
   margin: -15px;
 }
 
+@media screen and (min-width: 1200px) {
+  .client-list {
+    flex-wrap: nowrap;
+  }
+}
+
 .list-item {
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -843,6 +849,18 @@ address {
 .list-item:hover, .list-item:focus {
   border-color: #2196f3;
   transition: transform 500ms ease;
+}
+
+@media screen and (min-width: 768px) {
+  .list-item {
+    width: 226px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .list-item {
+    width: 170px;
+  }
 }
 
 .logo-svg {

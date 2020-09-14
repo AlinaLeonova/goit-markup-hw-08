@@ -329,6 +329,10 @@ address {
   min-width: 200px;
 }
 
+.popup-modal .button {
+  margin: 0 auto;
+}
+
 .button-text {
   color: #ffffff;
   text-align: center;

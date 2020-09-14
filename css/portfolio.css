@@ -328,6 +328,11 @@ address {
   color: #ffffff;
 }
 
+.button:hover, .button:focus {
+  color: #ffffff;
+  opacity: 0.8;
+}
+
 .footer .button {
   display: flex;
   margin: 0 auto;
@@ -382,6 +387,12 @@ address {
 
 .subscribe-input:focus {
   outline: none;
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe-input {
+    width: 450px;
+  }
 }
 
 @media screen and (min-width: 1200px) {

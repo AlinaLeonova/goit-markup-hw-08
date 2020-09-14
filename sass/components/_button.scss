@@ -12,6 +12,12 @@
   border-radius: 4px;
   color: $primary-white;
 
+  &:hover,
+  &:focus {
+    color: $primary-white;
+    opacity: 0.8;
+  }
+
   .footer & {
     display: flex;
     margin: 0 auto;

@@ -67,6 +67,7 @@ address {
 .container {
   padding-left: 15px;
   padding-right: 15px;
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
 }
@@ -74,18 +75,21 @@ address {
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
+    margin: 0 auto;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
+    margin: 0 auto;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
+    margin: 0 auto;
   }
 }
 
@@ -141,6 +145,12 @@ address {
   color: #ffffff;
   margin-bottom: 20px;
   display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    margin: 0 auto;
+  }
 }
 
 .nav {
@@ -256,6 +266,24 @@ address {
   cursor: pointer;
 }
 
+@media screen and (min-width: 1200px) {
+  .address {
+    margin-right: 70px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .address {
+    margin-right: 165px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .address {
+    margin-right: 70px;
+  }
+}
+
 .address-item:not(:last-child) {
   margin-bottom: 8px;
 }
@@ -315,9 +343,15 @@ address {
   color: #ffffff;
 }
 
+@media screen and (min-width: 1200px) {
+  .submit-form {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
+
 .subscribe-form {
   position: relative;
-  margin-right: 12px;
 }
 
 .subscribe-input {
@@ -336,6 +370,13 @@ address {
 
 .subscribe-input:focus {
   outline: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe-input {
+    width: 358px;
+    margin-right: 12px;
+  }
 }
 
 .subscribe-svg {
@@ -565,9 +606,32 @@ address {
   text-align: center;
 }
 
+@media screen and (min-width: 768px) {
+  .footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer .container {
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: start;
+  }
+}
+
 .footer .socials-list {
   display: flex;
   justify-content: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer .socials-list {
+    justify-content: start;
+  }
 }
 
 .footer .social-link {

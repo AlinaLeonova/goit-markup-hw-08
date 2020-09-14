@@ -1,10 +1,13 @@
-// .submit-form {
-//   display: flex;
-// }
+.submit-form {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
 
 .subscribe-form {
   position: relative;
-  margin-right: 12px;
+  // margin-right: 12px;
 }
 .subscribe-input {
   width: 450px;
@@ -21,6 +24,11 @@
 
   &:focus {
     outline: none;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    margin-right: 12px;
   }
 }
 

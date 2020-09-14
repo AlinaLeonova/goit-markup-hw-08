@@ -24,9 +24,9 @@
     color: $primary-white;
     margin-bottom: 20px;
     display: block;
-  }
 
-  @media screen and (min-width: 768px) {
-    margin: 0 auto;
+    @media screen and (min-width: 768px) {
+      margin: 0 auto;
+    }
   }
 }

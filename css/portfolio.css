@@ -129,6 +129,7 @@ main {
   line-height: 2;
   letter-spacing: 0.03em;
   text-decoration: none;
+  z-index: 1;
 }
 
 .logo .accent {
@@ -180,28 +181,46 @@ main {
 }
 
 .nav-item {
-  margin: 0;
-  display: flex;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-item {
+    display: flex;
+    margin: 0;
+  }
 }
 
 .nav-link {
   color: #212121;
   font-family: inherit;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 18px;
+  line-height: 1.16;
+  text-align: center;
   letter-spacing: 0.02em;
-  display: flex;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 32px 0;
+}
+
+.nav-link:not(:last-child) {
+  margin-bottom: 52px;
 }
 
 .nav-link:hover, .nav-link:focus {
   color: #2196f3;
 }
 
-.nav-link:not(:last-child) {
-  margin-right: 50px;
+@media screen and (min-width: 768px) {
+  .nav-link {
+    display: flex;
+    font-size: 14px;
+    line-height: 1.14;
+    padding: 32px 0;
+  }
+  .nav-link:not(:last-child) {
+    margin-right: 50px;
+    margin-bottom: 0;
+  }
 }
 
 .current {
@@ -218,6 +237,10 @@ main {
   border-radius: 2px;
   position: absolute;
   top: 44px;
+}
+
+.menu-nav {
+  margin-bottom: 60px;
 }
 
 .contacts {
@@ -241,13 +264,16 @@ main {
 .contacts-item {
   color: #757575;
   font-weight: 500;
-  font-size: 12px;
-  line-height: 2px;
+  font-size: 18px;
+  line-height: 1.16;
   letter-spacing: 0.02em;
   text-decoration: none;
-  display: flex;
-  align-items: center;
+  text-align: center;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts-item:not(:last-child) {
+  margin-bottom: 16px;
 }
 
 .contacts-item:hover, .contacts-item:focus {
@@ -255,6 +281,12 @@ main {
 }
 
 @media screen and (min-width: 768px) {
+  .contacts-item {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    line-height: 2px;
+  }
   .contacts-item:not(:last-child) {
     margin-bottom: 10px;
   }
@@ -422,19 +454,24 @@ main {
   flex: 0 0 auto;
 }
 
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .header-flex {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: relative;
 }
 
 .menu-btn {
-  position: absolute;
+  background-color: transparent;
+  border: none;
   width: 40px;
   height: 40px;
-  top: 10px;
-  right: 15px;
+  z-index: 1;
 }
 
 @media screen and (min-width: 768px) {
@@ -443,10 +480,19 @@ main {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .menu-btn {
-    display: none;
-  }
+.close-menu-icon {
+  display: none;
+}
+
+.header-menu {
+  position: absolute;
+  width: 480px;
+  height: 453px;
+  padding-top: 120px;
+  top: 0;
+  right: 0;
+  background: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
 }
 
 .gallery-menu {

@@ -43,13 +43,13 @@
             </li>
           </ul>
         </div>
-        <button class="menu-btn">
+        <button class="menu-btn" aria-expanded="false" aria-controls="header-menu" data-menu-button>
           <svg width="24" height="20">
             <use class="open-menu-icon" href="./images/sprite.svg#icon-menu"></use>
             <use class="close-menu-icon" href="./images/sprite.svg#icon-close-menu"></use>
           </svg>
         </button>
-        <div class="header-menu">
+        <div class="header-menu" data-menu>
           <nav class="menu-nav">
             <ul class="nav-item">
               <li class="nav-link"><a href="index.html" class="current">Студия</a></li>
@@ -540,5 +540,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

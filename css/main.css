@@ -666,7 +666,12 @@ main {
   border: none;
   width: 40px;
   height: 40px;
+  position: relative;
   z-index: 1;
+}
+
+.menu-btn:hover, .menu-btn:focus {
+  fill: #2196f3;
 }
 
 @media screen and (min-width: 768px) {
@@ -677,6 +682,14 @@ main {
 
 .close-menu-icon {
   display: none;
+}
+
+.menu-btn.is-open .open-menu-icon {
+  display: none;
+}
+
+.menu-btn.is-open .close-menu-icon {
+  display: block;
 }
 
 .header-menu {

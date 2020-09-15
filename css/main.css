@@ -128,7 +128,6 @@ main {
   width: 40px;
   height: 40px;
   position: relative;
-  z-index: 1;
 }
 
 .menu-btn:hover, .menu-btn:focus {
@@ -155,7 +154,8 @@ main {
 
 .header-menu {
   position: absolute;
-  width: 480px;
+  left: 0;
+  right: 0;
   height: 453px;
   padding: 60px;
   top: 0;
@@ -735,7 +735,7 @@ main {
 
 @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx), screen and (min-width: 320px) {
   .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero@2x.jpg);
   }
 }
 
@@ -748,21 +748,21 @@ main {
 
 @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx), screen and (min-width: 768px) {
   .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero-tablet@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-tablet@2x.jpg);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .hero {
     min-height: 600px;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../../images/hero-desktop.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/hero-desktop.jpg);
     max-width: 1600px;
   }
 }
 
 @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx), screen and (min-width: 1200px) {
   .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("../../images/hero-desktop@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/hero-desktop@2x.jpg);
   }
 }
 
@@ -776,6 +776,7 @@ main {
   .hero-content {
     max-width: 1200px;
     padding: 50px 15px;
+    width: 696px;
   }
 }
 
@@ -842,18 +843,30 @@ main {
 
 .antenna-icon::before {
   background-image: url(../../images/antenna.svg);
+  background-size: 70px 70px;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .clock-icon::before {
   background-image: url(../../images/clock.svg);
+  background-size: 70px 70px;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .diagram-icon::before {
   background-image: url(../../images/diagram.svg);
+  background-size: 70px 70px;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .astronaut-icon::before {
   background-image: url(../../images/astronaut.svg);
+  background-size: 70px 70px;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .features-title {

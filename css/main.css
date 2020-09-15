@@ -772,10 +772,16 @@ main {
   color: #ffffff;
 }
 
+@media screen and (min-width: 768px) {
+  .hero-content {
+    padding: 50px 15px;
+    width: 400px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .hero-content {
     max-width: 1200px;
-    padding: 50px 15px;
     width: 696px;
   }
 }

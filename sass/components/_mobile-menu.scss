@@ -42,6 +42,7 @@
   visibility: hidden;
   transform: translateY(49px);
   transition: all 500ms ease;
+  transition-delay: 250ms;
 
   @media screen and (min-width: 768px) {
     display: none;

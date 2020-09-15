@@ -16,7 +16,6 @@ html {
 img {
   display: block;
   max-width: 100%;
-  object-fit: cover;
 }
 
 body {
@@ -167,6 +166,7 @@ main {
   visibility: hidden;
   transform: translateY(49px);
   transition: all 500ms ease;
+  transition-delay: 250ms;
 }
 
 @media screen and (min-width: 768px) {
@@ -718,63 +718,6 @@ main {
   justify-content: space-between;
 }
 
-.menu-btn {
-  background-color: transparent;
-  border: none;
-  width: 40px;
-  height: 40px;
-  position: relative;
-  z-index: 1;
-}
-
-.menu-btn:hover, .menu-btn:focus {
-  fill: #2196f3;
-}
-
-@media screen and (min-width: 768px) {
-  .menu-btn {
-    display: none;
-  }
-}
-
-.close-menu-icon {
-  display: none;
-}
-
-.menu-btn.is-open .open-menu-icon {
-  display: none;
-}
-
-.menu-btn.is-open .close-menu-icon {
-  display: block;
-}
-
-.header-menu {
-  position: absolute;
-  width: 480px;
-  height: 453px;
-  padding: 60px;
-  top: 0;
-  right: 0;
-  background: #ffffff;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(49px);
-  transition: all 500ms ease;
-}
-
-@media screen and (min-width: 768px) {
-  .header-menu {
-    display: none;
-  }
-}
-
-.header-menu.is-open {
-  opacity: 1;
-  visibility: visible;
-}
-
 .hero {
   display: flex;
   text-align: center;
@@ -826,7 +769,6 @@ main {
 .hero-content {
   text-align: center;
   margin: auto;
-  padding: 118px 60px;
   color: #ffffff;
 }
 

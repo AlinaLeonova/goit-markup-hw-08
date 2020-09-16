@@ -186,7 +186,6 @@ main {
   line-height: 2;
   letter-spacing: 0.03em;
   text-decoration: none;
-  z-index: 1;
 }
 
 .logo .accent {

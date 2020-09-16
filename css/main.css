@@ -186,7 +186,6 @@ main {
   line-height: 2;
   letter-spacing: 0.03em;
   text-decoration: none;
-  z-index: 1;
 }
 
 .logo .accent {
@@ -476,20 +475,8 @@ main {
   left: 0;
   right: 0;
   overflow: hidden auto;
-  padding: 93px 0;
+  padding: 15px;
   display: flex;
-}
-
-@media screen and (min-width: 768px) {
-  .popup {
-    padding: 208px 0;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .popup {
-    padding: 221px 0;
-  }
 }
 
 .is-hidden {

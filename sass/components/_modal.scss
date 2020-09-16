@@ -16,16 +16,16 @@
   left: 0;
   right: 0;
   overflow: hidden auto;
-  padding: 93px 0;
+  padding: 15px;
   display: flex;
 
-  @media screen and (min-width: 768px) {
-    padding: 208px 0;
-  }
+  // @media screen and (min-width: 768px) {
+  //   padding: 208px 0;
+  // }
 
-  @media screen and (min-width: 1200px) {
-    padding: 221px 0;
-  }
+  // @media screen and (min-width: 1200px) {
+  //   padding: 221px 0;
+  // }
 }
 
 .is-hidden {
